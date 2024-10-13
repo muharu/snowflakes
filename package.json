@@ -1,0 +1,39 @@
+{
+  "name": "@giverve/snowflakes",
+  "version": "0.0.0",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint",
+    "clean": "rimraf dist",
+    "release": "semantic-release"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@hono/vite-dev-server": "^0.16.0",
+    "@remix-run/node": "^2.13.1",
+    "@types/node": "^22.7.5",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
+    "eslint": "^8.57.1",
+    "rimraf": "^6.0.1",
+    "semantic-release": "^24.1.2",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.8"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
